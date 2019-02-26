@@ -1,6 +1,6 @@
-workspace 'CMDemo'
-
 platform :ios, '9.0'
+target 'CMDemo' do
+inhibit_all_warnings!
 use_frameworks!
 pod 'CMSDK', :path =>'CMDemo/CMSDK/'
 end

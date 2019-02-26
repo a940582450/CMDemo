@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A71DDAD89F7050D6888C1B0 /* Pods_CMDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEEFB5806D5F0EEFC9A51A0 /* Pods_CMDemo.framework */; };
 		4B13569922251FBF00A45A43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B13569822251FBF00A45A43 /* AppDelegate.m */; };
 		4B13569C22251FBF00A45A43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B13569B22251FBF00A45A43 /* ViewController.m */; };
 		4B13569F22251FBF00A45A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B13569D22251FBF00A45A43 /* Main.storyboard */; };
@@ -57,6 +58,9 @@
 		4B1356CA2225212800A45A43 /* CMSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CMSDK.framework; sourceTree = "<group>"; };
 		4B1356CB2225212800A45A43 /* CMSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMSDK.podspec; sourceTree = "<group>"; };
 		4B1356CC2225212800A45A43 /* CMSDKBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CMSDKBundle.bundle; sourceTree = "<group>"; };
+		8A7DCD35BEE4C8B19A6125C0 /* Pods-CMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMDemo.debug.xcconfig"; path = "Target Support Files/Pods-CMDemo/Pods-CMDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BEEEFB5806D5F0EEFC9A51A0 /* Pods_CMDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D46C83D030AFC620FE79A4F9 /* Pods-CMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMDemo.release.xcconfig"; path = "Target Support Files/Pods-CMDemo/Pods-CMDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B1356CD2225212800A45A43 /* CMSDK.framework in Frameworks */,
+				4A71DDAD89F7050D6888C1B0 /* Pods_CMDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +97,8 @@
 				4B1356AF22251FC200A45A43 /* CMDemoTests */,
 				4B1356BA22251FC200A45A43 /* CMDemoUITests */,
 				4B13569522251FBF00A45A43 /* Products */,
+				DD00735367406526E4AC6376 /* Pods */,
+				8B92D05F70B229E064A71329 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +157,24 @@
 			path = CMSDK;
 			sourceTree = "<group>";
 		};
+		8B92D05F70B229E064A71329 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEEEFB5806D5F0EEFC9A51A0 /* Pods_CMDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD00735367406526E4AC6376 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A7DCD35BEE4C8B19A6125C0 /* Pods-CMDemo.debug.xcconfig */,
+				D46C83D030AFC620FE79A4F9 /* Pods-CMDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B1356C022251FC200A45A43 /* Build configuration list for PBXNativeTarget "CMDemo" */;
 			buildPhases = (
+				3F5D01BBB0EDCE8A0A5A127E /* [CP] Check Pods Manifest.lock */,
 				4B13569022251FBF00A45A43 /* Sources */,
 				4B13569122251FBF00A45A43 /* Frameworks */,
 				4B13569222251FBF00A45A43 /* Resources */,
+				5926239276C82AA0F289C730 /* [CP] Embed Pods Frameworks */,
+				16C74A6EBF4CBB4478A8F87D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,6 +304,83 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16C74A6EBF4CBB4478A8F87D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CMDemo/Pods-CMDemo-resources.sh",
+				"${PODS_ROOT}/../CMDemo/CMSDK/CMSDKBundle.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CMSDKBundle.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CMDemo/Pods-CMDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F5D01BBB0EDCE8A0A5A127E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CMDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5926239276C82AA0F289C730 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CMDemo/Pods-CMDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CMDemo/Pods-CMDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4B13569022251FBF00A45A43 /* Sources */ = {
@@ -453,6 +558,7 @@
 		};
 		4B1356C122251FC200A45A43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A7DCD35BEE4C8B19A6125C0 /* Pods-CMDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -476,6 +582,7 @@
 		};
 		4B1356C222251FC200A45A43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D46C83D030AFC620FE79A4F9 /* Pods-CMDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
