@@ -1,0 +1,8 @@
+workspace 'CMDemo'
+
+platform :ios, '9.0'
+use_frameworks!
+pod 'CMSDK', :path =>'CMDemo/CMSDK/'
+end
+
+

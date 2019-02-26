@@ -1,0 +1,6 @@
+framework module CMSDK {
+  umbrella header "CMSDK.h"
+
+  export *
+  module * { export * }
+}
