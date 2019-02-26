@@ -171,7 +171,6 @@
 				8A7DCD35BEE4C8B19A6125C0 /* Pods-CMDemo.debug.xcconfig */,
 				D46C83D030AFC620FE79A4F9 /* Pods-CMDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
