@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [CMSDKInterface initWithAppID:@"信用精灵分配给你的APP的ID"];
+    [CMSDKInterface initWithAppID:@"信用精灵分配给你的APP的ID" appSecret:@"信用精灵分配给你的appSecret"];
     return YES;
 }
 

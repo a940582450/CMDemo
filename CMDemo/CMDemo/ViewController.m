@@ -22,26 +22,14 @@
 
 - (IBAction)startBlackListDetection:(id)sender
 {
-    [CMSDKInterface loginWithMobile:@"用户的手机号" token:@"你的app的用户的登录态" resultBlock:^(BOOL success) {
-        if (success) {
-            [CMSDKInterface startWithDetectionType:CMDetectionTypeBlackList];
-        }
-    }];
+    [CMSDKInterface startWithMobile:@"用户的手机号" detectionType:CMDetectionTypeBlackList];
 }
 - (IBAction)startNetLoanDetection:(id)sender
 {
-    [CMSDKInterface loginWithMobile:@"用户的手机号" token:@"你的app的用户的登录态" resultBlock:^(BOOL success) {
-        if (success) {
-            [CMSDKInterface startWithDetectionType:CMDetectionTypeNetLoan];
-        }
-    }];
+    [CMSDKInterface startWithMobile:@"用户的手机号" detectionType:CMDetectionTypeNetLoan];
 }
 - (IBAction)startComprehensiveDetection:(id)sender
 {
-    [CMSDKInterface loginWithMobile:@"用户的手机号" token:@"你的app的用户的登录态" resultBlock:^(BOOL success) {
-        if (success) {
-            [CMSDKInterface startWithDetectionType:CMDetectionTypeComprehensive];
-        }
-    }];
+    [CMSDKInterface startWithMobile:@"用户的手机号" detectionType:CMDetectionTypeComprehensive];
 }
 @end
