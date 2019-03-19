@@ -19,11 +19,11 @@ typedef enum{
 /**
  @brief 通过使用在信用精灵注册的应用的信息，启动信用精灵查询服务
  
- @param appID 通过信用精灵申请的应用ID
+ @param appKey 通过信用精灵申请的应用AppKey
  @param appSecret 通过信用精灵申请的应用appSecret
  @note 接口所需参数必须要正确填写，反之信用精灵将不能正确为应用提供服务
  */
-+(void)initWithAppID:(NSString*)appID appSecret:(NSString*)appSecret;
++(void)initWithAppKey:(NSString*)appKey appSecret:(NSString*)appSecret;
 
 /**
  @brief 启动信用精灵检测服务
