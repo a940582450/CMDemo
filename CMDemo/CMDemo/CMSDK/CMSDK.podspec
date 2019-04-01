@@ -145,6 +145,7 @@ pod spec create xx
   spec.dependency 'Masonry'
   spec.dependency 'JSONModel'
   spec.dependency 'SDWebImage'
-
+  spec.dependency 'IQKeyboardManager'
+  
 
 end

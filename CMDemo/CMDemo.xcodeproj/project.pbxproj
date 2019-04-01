@@ -19,6 +19,7 @@
 		4B1356CD2225212800A45A43 /* CMSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1356CA2225212800A45A43 /* CMSDK.framework */; };
 		4B1356CE2225212800A45A43 /* CMSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4B1356CB2225212800A45A43 /* CMSDK.podspec */; };
 		4B1356CF2225212800A45A43 /* CMSDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4B1356CC2225212800A45A43 /* CMSDKBundle.bundle */; };
+		4BF1B7492252177900717201 /* TimeStampTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF1B7472252177800717201 /* TimeStampTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +57,10 @@
 		4B1356BB22251FC200A45A43 /* CMDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMDemoUITests.m; sourceTree = "<group>"; };
 		4B1356BD22251FC200A45A43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B1356CA2225212800A45A43 /* CMSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CMSDK.framework; sourceTree = "<group>"; };
-		4B1356CB2225212800A45A43 /* CMSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMSDK.podspec; sourceTree = "<group>"; };
+		4B1356CB2225212800A45A43 /* CMSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4B1356CC2225212800A45A43 /* CMSDKBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CMSDKBundle.bundle; sourceTree = "<group>"; };
+		4BF1B7472252177800717201 /* TimeStampTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeStampTool.m; sourceTree = "<group>"; };
+		4BF1B7482252177800717201 /* TimeStampTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeStampTool.h; sourceTree = "<group>"; };
 		8A7DCD35BEE4C8B19A6125C0 /* Pods-CMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMDemo.debug.xcconfig"; path = "Target Support Files/Pods-CMDemo/Pods-CMDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BEEEFB5806D5F0EEFC9A51A0 /* Pods_CMDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46C83D030AFC620FE79A4F9 /* Pods-CMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMDemo.release.xcconfig"; path = "Target Support Files/Pods-CMDemo/Pods-CMDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 				4B13569822251FBF00A45A43 /* AppDelegate.m */,
 				4B13569A22251FBF00A45A43 /* ViewController.h */,
 				4B13569B22251FBF00A45A43 /* ViewController.m */,
+				4BF1B7482252177800717201 /* TimeStampTool.h */,
+				4BF1B7472252177800717201 /* TimeStampTool.m */,
 				4B13569D22251FBF00A45A43 /* Main.storyboard */,
 				4B1356A022251FC200A45A43 /* Assets.xcassets */,
 				4B1356A222251FC200A45A43 /* LaunchScreen.storyboard */,
@@ -359,6 +364,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CMDemo/Pods-CMDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
@@ -369,6 +375,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
@@ -386,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BF1B7492252177900717201 /* TimeStampTool.m in Sources */,
 				4B13569C22251FBF00A45A43 /* ViewController.m in Sources */,
 				4B1356A722251FC200A45A43 /* main.m in Sources */,
 				4B13569922251FBF00A45A43 /* AppDelegate.m in Sources */,
@@ -573,7 +581,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ppdai.CMDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ppdai.cmsdkdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = wild_190103;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -585,7 +593,7 @@
 			baseConfigurationReference = D46C83D030AFC620FE79A4F9 /* Pods-CMDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = QJ28T2ZGMB;
 				ENABLE_BITCODE = YES;
@@ -599,9 +607,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ppdai.CMDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ppdai.cmsdkdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = wild_190103;
+				PROVISIONING_PROFILE_SPECIFIER = CMSDK_DEMO_ADHOC;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
