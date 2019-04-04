@@ -38,17 +38,17 @@
 - (IBAction)startBlackListDetection:(id)sender
 {
     [self check];
-    [CMSDKInterface startWithMobile:@"用户的手机号" detectionType:CMDetectionTypeBlackList];
+    [CMSDKInterface startWithMobile:self.mobileTextfield.text detectionType:CMDetectionTypeBlackList];
 }
 - (IBAction)startNetLoanDetection:(id)sender
 {
     [self check];
-    [CMSDKInterface startWithMobile:@"用户的手机号" detectionType:CMDetectionTypeNetLoan];
+    [CMSDKInterface startWithMobile:self.mobileTextfield.text detectionType:CMDetectionTypeNetLoan];
 }
 - (IBAction)startComprehensiveDetection:(id)sender
 {
     [self check];
-    [CMSDKInterface startWithMobile:@"用户的手机号" detectionType:CMDetectionTypeComprehensive];
+    [CMSDKInterface startWithMobile:self.mobileTextfield.text detectionType:CMDetectionTypeComprehensive];
 }
 
 -(IBAction)refreshBlackReportInfo:(id)sender
