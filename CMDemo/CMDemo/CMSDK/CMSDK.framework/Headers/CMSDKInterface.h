@@ -23,9 +23,10 @@ typedef enum{
  
  @param appKey 通过信用精灵申请的应用AppKey
  @param appSecret 通过信用精灵申请的应用appSecret
+ @param exitBlock 退出SDK时的回调,可以为nil
  @note 接口所需参数必须要正确填写，反之信用精灵将不能正确为应用提供服务
  */
-+(void)initWithAppKey:(NSString*)appKey appSecret:(NSString*)appSecret;
++(void)initWithAppKey:(NSString*)appKey appSecret:(NSString*)appSecret exitBlock:(void(^)(void))exitBlock;
 
 /**
  @brief 启动信用精灵检测服务，如果报告在有效期内，SDK直接展示报告，如果过了有效期，会生成一份新的报告
